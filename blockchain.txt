@@ -1,0 +1,44 @@
+1. fuction constructors	
+	  var name= New function_name();
+	function user(var1, var2, var3 ...)
+		{
+			this.var1=var1;               // this refers to the object created by the user function//
+			this.var2=var2;
+			
+				}
+	Example:
+ 		
+		var user1 = new user('Jhon','smith','male','26')
+
+2. Prototype object 
+	     // single object that can refer to multiple objects at an instance //
+	      
+	     var.prototype.emailDomain='@var.com';
+	     
+		Example:
+		user.prototype.getEmailAddress =function(){
+			return this.var_name + this.emailDomain;
+			}
+		var1.getEmailAddress()
+3. API development (by express js)
+		// to make application programming interface
+
+
+	commands- post, get,app
+	var express= require('express') 
+	var app=express()
+	app.get('/', function(req,res))
+		{ res.send('hello world')}
+	app.listen(3000)
+
+
+4. Concensus algorithm
+	designed to validate the data by all the nodes of the blockchain
+	gets all the data to every node and verify it, or internally getting being hacked 
+	confirmation of correct data
+		Various concencus algorithms (basics of the cryptocurrency)
+	crytos depends upon the type concensus algo. 
+	Main used= longest chain data
+		(mimicking for bitcoin)
+1.chain is valid
+2. consensus endpoint
