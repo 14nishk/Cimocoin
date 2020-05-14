@@ -1,0 +1,13 @@
+version: '2'
+services: 
+  node:
+    image: 'node:latest'
+  nginx:
+    image: 'kanishk1497/multi-nginx'  
+  nginx:
+    restart: always
+    build:
+      dockerfile: dockerfile.prod
+      context: ./nginx
+    ports: 
+    - '3000:50'    
